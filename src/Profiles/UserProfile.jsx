@@ -102,12 +102,8 @@ function UserProfile() {
                   </div>
                   <div className="p-3 text-center">
                     <span className="text-sm text-slate-400">Role</span>
-                    <span className="text-xl font-bold block uppercase tracking-wide text-slate-700">{user.user.role || "Unk"}</span>
-                  </div>
-                  <div className="p-3 text-center">
-                    <span className="text-sm text-slate-400">Verified</span>
-                    <span className="text-xl font-bold block uppercase tracking-wide text-slate-700">{user.verified ? '✓' : '▭'}</span>
-                  </div>
+                    <span className="text-xl font-bold block tracking-wide text-slate-700">{user.user.role  === 'User' ? 'Customer': user.user.role}</span>
+                  </div> 
                 </div>
               </div>
             </div>

@@ -18,11 +18,12 @@ import OtherRestprofile from './Profiles/OtherRestProfile';
 import Menu from './Pages/Menu';
 import Addpic from './Profiles/Addpic';
 import AprroveReject from './Pages/AprroveReject';
+import Payment from './Components/Payment';
 
 
 function App() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen"> 
       <Router>
       <ToastContainer />
         <div>
@@ -43,9 +44,24 @@ function App() {
             <Route path="/edit-rest" element={<EditRest />} />
             <Route path="/addMenu" element={<Menu />} />
             <Route path="/addpic" element={<Addpic />} />
+            <Route path="/payment" element={<Payment />} />
           </Routes>
         </div>
       </Router>
+  <footer className="mt-auto">
+    <div className="container mx-auto px-4">
+      <div className="flex flex-wrap items-center md:justify-between justify-center">
+        <div className="w-full md:w-6/12 px-4 mx-auto text-center">
+          <div className="text-sm text-slate-500 font-semibold py-1">
+            <div>
+              @Nomads_table_ _ Contact:_ _ nomad254@mail.com
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> 
+
     </div>
   )
 }
