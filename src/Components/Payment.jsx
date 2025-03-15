@@ -221,7 +221,7 @@ function Payment() {
         };
 
         try {
-            const response = await fetch('http://127.0.0.1:8000/mpesa/api/stk-push/', {
+            const response = await fetch('https://restaurant-booking-system-p6dd.onrender.com/mpesa/api/stk-push/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
